@@ -203,7 +203,7 @@ type Movie struct {
 	Director   string `json:"director"`
 }
 
-// Movies fixture data
+// Movie fixture data
 var movies = []*Movie{
 	{ID: "1", MovieName: "The Shawshank Redemption", Genre: "Drama", Director: "Frank Darabont"},
 	{ID: "2", MovieName: "The Godfather", Genre: "	Crime", Director: "Francis Ford Coppola"},
