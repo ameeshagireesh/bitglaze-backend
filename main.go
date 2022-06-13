@@ -203,12 +203,12 @@ type Movie struct {
 	Director   string `json:"director"`
 }
 
-// Article fixture data
+// Movies fixture data
 var movies = []*Movie{
-	{ID: "1", MovieName: "100", Genre: "Hi", Director: "hi"},
-	{ID: "2", MovieName: "200", Genre: "sup", Director: "sup"},
-	{ID: "3", MovieName: "300", Genre: "alo", Director: "alo"},
-	{ID: "4", MovieName: "400", Genre: "bonjour", Director: "bonjour"},
+	{ID: "1", MovieName: "The Shawshank Redemption", Genre: "Drama", Director: "Frank Darabont"},
+	{ID: "2", MovieName: "The Godfather", Genre: "	Crime", Director: "Francis Ford Coppola"},
+	{ID: "3", MovieName: "The Dark Knight", Genre: "Action", Director: "Christopher NOlan"},
+	{ID: "4", MovieName: "Pulp Fiction", Genre: "Drama", Director: "Quentin Tarantino"},
 }
 
 func dbNewMovie(movie *Movie) (string, error) {
